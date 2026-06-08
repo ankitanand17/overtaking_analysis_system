@@ -1,0 +1,38 @@
+# Virtual Environment
+venv_gpu/
+.venv/
+venv/
+env/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Large Weights/Models
+*.pt
+*.onnx
+
+# Dynamic Results & Uploads
+backend/static/uploads/*
+backend/static/results/*
+!backend/static/uploads/.gitkeep
+!backend/static/results/.gitkeep
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Frontend dependencies and builds
+**/node_modules/
+**/dist/
+**/build/
+.env*
+.eslintcache
+
+# Large Video Excluded due to size limit
+backend/videos/Overtake_4.mp4
+
+# Calibration plots
+backend/distance_calibration_metrics.png
